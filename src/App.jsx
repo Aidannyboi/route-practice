@@ -10,8 +10,13 @@ function App() {
     <>
     <BrowserRouter>
         <Routes>
+
           <Route path='/home' element= {<Home/>}/>
+
           <Route path='/:userInput' element={<DisplayParam/>}/>
+
+          <Route path='/:userInput/:color/:backgroundColor' element={<DisplayParam/>}/>
+
         </Routes>
       </BrowserRouter>
     </>
